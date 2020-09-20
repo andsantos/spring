@@ -1,0 +1,33 @@
+spring:
+  profiles:
+    active: "dev"
+  main:
+    banner-mode: "off"
+
+  mail:
+    host: 192.168.1.72
+    port: 1025
+#    username: mymail@gmail.com
+#    password: mypassword
+#    protocol: smtp
+#    tls: true
+#    properties.mail.smtp:
+#        auth: true
+#        starttls.enable: true
+#        ssl.trust: smtp.gmail.com
+
+  rabbitmq:
+    host: 192.168.1.72
+    port: 5672
+    username: guest
+    password: guest
+
+  logging:
+    level:
+      .: error
+      org.springframework: ERROR
+
+rabbitmq.queue.mail: mail.queue
+rabbitmq.exchange.mail: mail.exchange
+rabbitmq.routing.key.mail: mail.routing.key
+

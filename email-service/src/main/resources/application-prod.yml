@@ -1,0 +1,23 @@
+spring:
+  profiles:
+    active: "prod"
+  main:
+    banner-mode: "off"
+
+  mail:
+    host: 192.168.1.72
+    port: 1025
+#    username: mymail@gmail.com
+#    password: mypassword
+#    protocol: smtp
+#    tls: true
+#    properties.mail.smtp:
+#        auth: true
+#        starttls.enable: true
+#        ssl.trust: smtp.gmail.com
+
+  logging:
+    level:
+      .: error
+      org.springframework: ERROR
+
